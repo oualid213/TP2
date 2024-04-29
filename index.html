@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>cinéDz</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <link rel="stylesheet" href="stylesheet/style.css">
+
+        <script src="javaScript/loadPage.js" ></script>
+        <script src="javaScript/main.js"></script>
+        <script src="javaScript/changerTheme.js"></script>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Kufi+Arabic:wght@100..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+         <link rel="shortcut icon" href="Image/image site/logo-CINÉMADZ-removebg-preview.png" type="image/x-icon">
+
+    </head>
+<body class="bg-black ">
+    <main class="">
+        <nav class="navbar  navbar-expand-lg navbar-light pb-md-1  pb-5 bg-black fixed-top" id="navbar">
+          <button onclick="toggleTheme()" class="bg-transparent border-0"><i class="fa-solid fa-sun text-light"></i></button>
+
+            <div class="container-fluid position-relative">
+
+                <a class="navbar-brand position-absolute top-0 start-50 translate-middle-x" href="#">
+                <img src="Image/image site/CLUB_DE_SPORT__3_-removebg-preview.png" stalt="Logo" width="100" height="" style="margin-top: -2.4rem;">
+              </a>
+          
+
+              <button class="navbar-toggler position-absolute top-0 end-0 me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars text-light btn-gradient-pink-purple"></i>
+              </button>
+          
+
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="index.html">Accueil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Films</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+          
+
+                <div class="d-flex">
+                  <button class="btn text-light me-2" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <a href="pageConnexion.html" class="btn btn-outline rounded-pill p-2 mt-1 btn-gradient-pink-purple">connexion</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+          
+          
+          
+          
+          <section>
+          <div class="video-container">
+            
+                    <img id="image-preliminaire" src="image/héliopolis/photo 2.jpg" class="img-fluid" alt="Image préliminaire">
+
+            <video autoplay muted loop id="video-bg" style="display: none;">
+              <source src="Image/héliopolis/Bande Annonce Officielle du Film HELIOPOLIS _الإعلان الرسمي لفيلم _هيليوبوليس.mp4" type="video/mp4">
+              Votre navigateur ne prend pas en charge la vidéo HTML5.
+            </video>
+
+            <div class="container-md">
+                <div id="film-details" class="text-overlay position-absolute top-50 start-0 translate-middle-y text-center">
+                    <div class="row width-custom-2">
+                        <div class="col-md-6 mx-5 text-start  container">
+                            <h1 class="card-title text-white">Héliopolis</h1>
+                            <p class="text-white px-1 py-2 " >Héliopolis est un film qui retrace le début des évènements tragiques du 8 mai 1945 et les massacres de Sétif, Guelma et Kherrata en Algérie durant la colonisation française.</p>
+                            <div class="d-flex align-items-center">
+                                <div class="col-6 col-md-2 ">
+                                    <a href="#" class="btn btn-outline rounded-pill p-2 mt-1 btn-gradient-pink-purple">Tickets</a>
+                                </div>
+                                <div class="col-6 col-md-2 ">
+                                    <a href="#" class="btn btn-outline rounded-pill p-2 mt-1 bg-transparent text-light">Détails</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid container-sm" style="max-width: none;">
+            <div class=" d-flex justify-content-center align-items-center">
+                <div class="container">
+                 <h1 class="text-light mt-4 mb-4 fs-1 fw-bold text-center">Notre collection de films</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 video-container position-relative">
+                   <a href=""><img id="image-preliminaire" src="image/héliopolis/5918225.webp" class="w-100 image-filter" alt="Image préliminaire">
+                    <div class="container">
+                        <div id="film-details" class="text-overlay position-absolute bottom-0 start-50 translate-middle-x text-center">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="col-md-12 text-start">
+                                    <div class="mb-5">
+                                            <a href="#" class="btn btn-outline rounded-pill text-white p-2 ms-2 mt-1 bg-custom">Acheter un Tickets</a>
+                                           <div> <a href="film.html" class="btn bg-black btn-primary bg-color ms-5 text-white border-0 rounded-pill p-2" id="filmheliopolisbtn">Détails</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="col-md-3 video-container">
+                    <img id="image-preliminaire" src="image/Omar-la-fraise/photo-omarLaFraise.jpg" class="img-fluid image-filter" alt="Image préliminaire">
+                    <div class="container">
+                        <div id="film-details" class="text-overlay position-absolute bottom-0 start-50 translate-middle-x text-center">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="col-md-12 text-start">
+                                    <div class="mb-5">
+                                            <a href="#" class="btn btn-outline rounded-pill text-white p-2 ms-2 mt-1 bg-custom">Acheter un Tickets</a>
+                                           <div> <a href="omar-frais.html" class="btn bg-black btn-primary bg-color ms-5 text-white border-0  rounded-pill p-2" id = "2">Détails</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-md-3 video-container">
+                    <img id="image-preliminaire" src="image/desert-rose/desert-rose.jpg" class="img-fluid image-filter" alt="Image préliminaire">
+                    <div class="container">
+                        <div id="film-details" class="text-overlay position-absolute bottom-0 start-50 translate-middle-x text-center">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="col-md-12 text-start">
+                                    <div class="mb-5">
+                                            <a href="#" class="btn btn-outline rounded-pill text-white p-2 ms-2 mt-1 bg-custom">Acheter un Tickets</a>
+                                           <div> <a href="desert-rose.html" class="btn bg-black btn-primary bg-color-1 ms-5 text-white border-0  rounded-pill p-2" id = "3">Détails</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="col-md-3 video-container">
+                    <img id="image-preliminaire" src="image/abouleila/ABOU-LEILA_AFA.jpg" class="img-fluid image-filter" alt="Image préliminaire">
+                    <div class="container">
+                        <div id="film-details" class="text-overlay position-absolute bottom-0 start-50 translate-middle-x text-center">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="col-md-12 text-start">
+                                    <div class="mb-5">
+                                            <a href="#" class="btn btn-outline rounded-pill text-white p-2 ms-2 mt-1 bg-custom">Acheter un Tickets</a>
+                                          <div>  <a href="abouleila.html" class="btn btn-primary bg-black ms-5 text-white border-0 rounded-pill p-2" id = "1">Détails</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <div class="mt-3  text-center"><a href="#" class="text-light "> plus de film </a></div>
+        </section>
+
+        <section class="container pt-5 pb-5">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block margin-left-custom " src="Image/carouselleFilm/film4.jpg" alt="First slide" width="700px" height="400px">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block margin-left-custom" src="Image/carouselleFilm/boussa1.jpg" alt="Second slide" width="700px" height="400px">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block margin-left-custom" src="Image/carouselleFilm/test3.png" alt="Third slide" width="700px" height="400px">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+
+       
+
+       
+        
+        <section class="container-md ">
+            <div class="row mt-5">
+    
+    
+            <div class="col-md-6"><img src="Image/image site/CLUB_DE_SPORT__3_-removebg-preview.png" alt=""></div>
+    
+            <div class="col-md-6 mt-5">
+                <h1 class="text-light text-center">Qui nous sommes</h1>
+                <p class="text-light text-center">Nous sommes un cinéma passionné qui met en avant la richesse cinématographique de l'Algérie. Chaque semaine, nous projetons une sélection variée de films d'origine algérienne, allant des drames aux comédies en passant par les documentaires engagés. Notre objectif est de partager des récits authentiques qui célèbrent la culture et l'héritage de l'Algérie.</p>
+                <p class="text-light text-center">À travers nos projections, nous invitons notre public à découvrir la diversité des talents artistiques algériens et à explorer les réalités contemporaines de ce pays fascinant. Chaque film est soigneusement choisi pour son pouvoir d'émouvoir, d'éduquer et d'inspirer.</p>
+                <p class="text-light text-center">Rejoignez-nous pour une expérience cinématographique captivante, où les frontières culturelles s'effacent et où les histoires nous rassemblent dans un voyage inoubliable à travers l'Algérie sur grand écran.        </p>
+            </div>  
+        </div>
+    
+        </section>    
+
+
+        <section class="mt-5 container">
+            <form class="d-flex justify-content-center align-items-center flex-column">
+                <div class="mb-3 rounded-pill">
+                    <label for="barre de recherche" class="form-label text-light text-center fs-5">Vous cherchez un film? Un acteur? Une réalisatrice? Un artisan du cinéma?</label>
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="col-md-8">
+                            <input class="form-control width-custom form-control  bg-transparent border-bottom text-white " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrez votre recherche ici...">
+                        </div> 
+                        <div class="col-md-3">
+                            <button type="submit" class="btn btn-outline ms-5 ps-5 pe-5  rounded-pill p-2 mt-1 btn-gradient-pink-purple">Rechercher</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <footer class="py-5 container text-le text-white">
+            <div class="row">
+                <div class="col-12 col-md-4 mb-3 text-center">
+                    <h5>À cineDZ</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light p-0 text-body-secondary ">Santé et sécurité</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light p-0 text-body-secondary ">Centre d'aide</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light p-0 text-body-secondary ">Opportunités de publicité</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light p-0 text-body-secondary d-none d-sm-block">Cartes-cadeaux électroniques</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light p-0 text-body-secondary d-none d-sm-block">Cartes cadeaux</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light p-0 text-body-secondary d-none d-sm-block">Téléchargez notre application</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 mb-3 text-center">
+                    <h5>Information d'entreprise</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light p-0 text-body-secondary ">Ventes et locations aux entreprises</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light p-0 text-body-secondary ">Information d'entreprise</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light p-0 text-body-secondary ">Salle de presse</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light p-0 text-body-secondary d-none d-sm-block">Relations avec les investisseurs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light p-0 text-body-secondary d-none d-sm-block">Produits d'entreprise</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 mb-3 text-center">
+                    <h5>Informations sur le théâtre</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light p-0 text-body-secondary ">Trouver un théâtre</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light p-0 text-body-secondary ">Nourriture et boisson</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light p-0 text-body-secondary ">Réservez une fête</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light p-0 text-body-secondary d-none d-sm-block">Étoiles et poussettes</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light p-0 text-body-secondary d-none d-sm-block">Accessibilité</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light p-0 text-body-secondary d-none d-sm-block">Programme Accès 2</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light p-0 text-body-secondary d-none d-sm-block">Réunions d'entreprise et projections</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light p-0 text-body-secondary d-none d-sm-block">Événements scolaires et projections</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link text-light p-0 text-body-secondary d-none d-sm-block">Code de conduite des invités</a></li>
+                    </ul>
+                </div>
+            <div class="text-light d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>© 2024 Company, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="text-light link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+                    <li class="ms-3"><a class="text-light link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+                    <li class="ms-3"><a class="text-light link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+                </ul>
+            </div>
+        </footer>
+        
+    </main>
+    
+    
+</body>
+</html>
